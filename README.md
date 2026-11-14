@@ -57,4 +57,4 @@ The archive contains the MediaGarrd server's database (`mediagarrd.db`). Stop th
 
 ## License
 
-GPL-3.0, see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
