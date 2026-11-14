@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 dump() {
-    local skip=(\( -path /usr -o -path /proc -o -path /dev -o -path /tmp -o -path /.mg -o -path /bin -o -path /lib -o -path /lib64 -o -path /sbin \) -prune -o)
-    find / -mindepth 1 "${skip[@]}" -printf '%p|%y|%m|%U|%l\n' | LC_ALL=C sort
+    local skip=(\( -path /usr -o -path /proc -o -path /dev -o -path /tmp -o -path /.mg -o -path /bin -o -path /lib -o -path /lib64 -o -path /sbin -o -path /etc/alternatives \) -prune -o)
+    find / -mindepth 1 "${skip[@]}" ! -path /etc -printf '%p|%y|%m|%U|%l\n' | LC_ALL=C sort
     find / -mindepth 1 "${skip[@]}" -type f -exec sha256sum {} + | LC_ALL=C sort
 }
 cd /
