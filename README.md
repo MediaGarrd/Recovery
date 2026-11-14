@@ -9,7 +9,7 @@
 ## Install
 For a minimal download of the tool:
 ```sh
-wget https://github.com/MediaGarrd/Recovery/releases/latest/download/mgrecover.sh
+curl -fLO https://github.com/MediaGarrd/Recovery/releases/latest/download/mgrecover.sh
 ```
 To download the full repo:
 ```sh
