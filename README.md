@@ -7,7 +7,11 @@
 - bash 4+, `bsdtar` (Debian/Ubuntu: `apt install libarchive-tools`, Arch: `pacman -S libarchive`, Fedora: `dnf install bsdtar`), coreutils, `awk`, `sed`
 
 ## Install
-
+For a minimal download of the tool:
+```sh
+wget https://github.com/MediaGarrd/Recovery/releases/latest/download/mgrecover.sh
+```
+To download the full repo:
 ```sh
 git clone --depth 1 https://github.com/MediaGarrd/Recovery.git
 cd Recovery
